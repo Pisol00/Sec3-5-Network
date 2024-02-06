@@ -20,7 +20,7 @@ List of Linux Components for Students Assignment - (Chapter: Network, Sec: 3)
 
 ## Present
 <div>
-<img alt="Sumet" src="/members-and-teacher/Sumet.png">
+<img alt="Sumet" src="/members-and-teacher/Sumet.jpg" width="250">
   <p>ผู้ช่วยศาสตราจารย์ ดร. สุเมธ ประภาวัต</p>
 </div>
 <br>
