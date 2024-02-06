@@ -19,7 +19,11 @@ List of Linux Components for Students Assignment - (Chapter: Network, Sec: 3)
 
 
 ## Present
-ผู้ช่วยศาสตราจารย์ ดร. สุเมธ ประภาวัต
+<div>
+<img alt="Sumet" src="/members-and-teacher/Sumet.png">
+  <p>ผู้ช่วยศาสตราจารย์ ดร. สุเมธ ประภาวัต</p>
+</div>
+<br>
 
 
 ## Source
