@@ -9,13 +9,13 @@ List of Linux Components for Students Assignment - (Chapter: Network, Sec: 3)
 
 | STUDENT ID|Name|Subcomponents|
 |-----------|----|-------------|
-|65070127 |นางสาวปณาลี จุกสีดา     |How network important in linux |
-|65070147 |นายพรเสก ชื่นมี         ||
-|65070157 |นางสาวพิราภรณ์ ประเสิริฐ  |IP setup|
-|65070158 |นายพิศลย์ อุตตาลกาญจนา |Telnet|
-|65070165 |นายภควัฒณ์ พันธุ์ภักดีวงษ์ |SSH|
+|65070127 |นางสาวปณาลี จุกสีดา     |Interface Devices (Part2)|
+|65070147 |นายพรเสก ชื่นมี         |Telnet SSH|
+|65070157 |นางสาวพิราภรณ์ ประเสิริฐ  |Routing, Gateway|
+|65070158 |นายพิศลย์ อุตตาลกาญจนา |IP Setup|
+|65070165 |นายภควัฒณ์ พันธุ์ภักดีวงษ์ |Interface Devices (Part1)|
 |65070168 |ภัณฑิรา ปิ่นกิ่งทอง       |DNS|
-|65070170 |นางสาวภัทรภร จิตต์ปราณี  |DHCP|
+|65070170 |นางสาวภัทรภร จิตต์ปราณี  |Intro network to linux|
 
 
 ## Present
