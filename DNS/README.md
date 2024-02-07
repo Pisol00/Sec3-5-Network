@@ -5,7 +5,7 @@ DNS (Domain Name Server) คือ ระบบที่มีไว้สำห
 ## หน้าที่ของ DNS
 ทำหน้าที่ในการแปลง Domain Name เป็นหมายเลข IP Address เพื่อนำหมายเลขไอพีดังกล่าวไปติดต่อยัง Sever อื่น ๆ ที่ต้องการ  Sever Email Hosting , Server Web Hosting เป็นต้น
 ## การติดตั้ง DNS Server
-### 1. Install dns server ที่เครื่อง Ubuntu
+### 1. Install DNS server ที่เครื่อง Ubuntu
 ```
 sudo apt-get install bind9
 ```
@@ -13,7 +13,7 @@ sudo apt-get install bind9
 ```
 sudo apt install dnsutils
 ```
-### 2. ทำการเช็ค ip ของเครื่อง ubuntu
+### 2. ทำการเช็ค ip ของเครื่อง Ubuntu
 ```
 ifconfig
 ```
