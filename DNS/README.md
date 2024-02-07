@@ -45,7 +45,7 @@ zone "example.com" {
 ```
 sudo cp /etc/bind/db.local /etc/bind/db.example.com
 ```
-### 6. สร้าง record สำหรับ base domain และ ns.example.com
+สร้าง record สำหรับ base domain และ ns.example.com
 ```
 ;
 ; BIND data file for example.com
@@ -64,7 +64,7 @@ $TTL    604800
 ns      IN      A       192.168.10.2
 ```
 > IP Address `192.168.10.2` เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
-### 7. Reverse Zone File
+### 6. Reverse Zone File
 เพิ่ม Reverse Zone File เพื่ออนุญาตให้ DNS แก้ไขที่อยู่เป็นชื่อ
 ```
 sudo nano /etc/bind/named.conf.local
@@ -100,12 +100,22 @@ $TTL    604800
 
 ```
 > เลข `2` เป็น octets สุดท้ายของ IP Address
+
+### 7. แก้ไข resolv.conf
+```
+sudo nano /etc/resolv.conf
+```
+เพิ่ม Nameserver Addresses ไปยัง network clients:
+```
+nameserver 192.168.10.2
+search example.com
+```
 ### 8. Restart the DNS server
 ```
 sudo systemctl restart bind9.service
 ```
 ## การทดสอบ
-### 1. แก้ไข resolv.conf
+ทดสอบความถูกต้องของ DNS ที่ได้ทำการสร้างขึ้นมา
 ```
-sudo nano /etc/resolv.conf
+ping example.com
 ```
