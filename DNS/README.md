@@ -28,7 +28,7 @@ forwarders {
     192.168.10.2;
 };
 ```
-> IP Address 192.168.10.2 เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
+> IP Address `192.168.10.2` เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
 ### 4. Primary Server
 แก้ไขไฟล์ /etc/bind/named.conf.local เพื่อเพิ่ม DNS zone ให้กับ BIND9
 ```
@@ -59,11 +59,53 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 
 @       IN      NS      ns.example.com.
-@       IN      A       192.168.1.10
+@       IN      A       192.168.10.2
 @       IN      AAAA    ::1
-ns      IN      A       192.168.1.10
+ns      IN      A       192.168.10.2
 ```
-### 7. Restart the DNS server
+> IP Address `192.168.10.2` เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
+### 7. Reverse Zone File
+เพิ่ม Reverse Zone File เพื่ออนุญาตให้ DNS แก้ไขที่อยู่เป็นชื่อ
+```
+sudo nano /etc/bind/named.conf.local
+```
+และทำการแก้ไข Zone File:
+```
+zone "10.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192";
+};
+```
+> `10.168.192` เป็น IP Address 3 octets แรกของเครื่องคอมพิวเตอร์ตัวอย่าง
+#### สร้างไฟล์ db.192
+โดยการ copy ไฟล์ของ db.127 เป็นไฟล์ชื่อ db.192
+```
+sudo cp /etc/bind/db.127 /etc/bind/db.192
+```
+ทำการแก้ไขไฟล์ db.192:
+```
+;
+; BIND reverse data file for local 192.168.1.XXX net
+;
+$TTL    604800
+@       IN      SOA     ns.example.com. root.example.com. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns.
+2      IN      PTR     ns.example.com.
+
+```
+> เลข `2` เป็น octets สุดท้ายของ IP Address
+### 8. Restart the DNS server
 ```
 sudo systemctl restart bind9.service
+```
+## การทดสอบ
+### 1. แก้ไข resolv.conf
+```
+sudo nano /etc/resolv.conf
 ```
