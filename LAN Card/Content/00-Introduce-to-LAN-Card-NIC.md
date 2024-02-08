@@ -11,13 +11,13 @@
 
 **Ethernet LAN Card**
 
-![*[ภาพที่ 1]* LAN Card TP-Link Network TX201 2.5 Gigabit PCIe Network Adapter](00-Introduce-to-LAN-Card-NIC%205efda9b228a7417c907c5e43f34080aa/LanCard_ethernet.jpg)
+![*[ภาพที่ 1]* LAN Card TP-Link Network TX201 2.5 Gigabit PCIe Network Adapter](../assets/LanCard_ethernet.jpg)
 
 *[ภาพที่ 1]* LAN Card TP-Link Network TX201 2.5 Gigabit PCIe Network Adapter
 
 **Wireless LAN card**
 
-![*[ภาพที่ 2]* LAN Card TP-Link AX3000 (ARCHER TX55E) WI-FI 6 Bluetooth 5.2 PCIE Adapter](00-Introduce-to-LAN-Card-NIC%205efda9b228a7417c907c5e43f34080aa/LanCard_wireless.jpg)
+![*[ภาพที่ 2]* LAN Card TP-Link AX3000 (ARCHER TX55E) WI-FI 6 Bluetooth 5.2 PCIE Adapter](../assets/LanCard_wireless.jpg)
 
 *[ภาพที่ 2]* LAN Card TP-Link AX3000 (ARCHER TX55E) WI-FI 6 Bluetooth 5.2 PCIE Adapter
 
