@@ -29,11 +29,11 @@ putter@anthority:~$ sudo useradd -m -G qassure qa02
 
 สามารถตรวจสอบคำสั่งได้โดยการใช้ `grep {group_name} /etc/group`
 
-![สกรีนช็อต 2024-02-07 104436.png](COMOR%20Lab%20week%209%20-%20Users%20and%20Authorization%2035dfec3643774cc48f25030f4f242d1e/_2024-02-07_104436.png)
+![สกรีนช็อต 2024-02-07 104436.png](../_2024-02-07_104436.png)
 
 ทดสอบการให้ password ของ user ที่สร้างขึ้น
 
-![สกรีนช็อต 2024-02-07 104500.png](COMOR%20Lab%20week%209%20-%20Users%20and%20Authorization%2035dfec3643774cc48f25030f4f242d1e/_2024-02-07_104500.png)
+![สกรีนช็อต 2024-02-07 104500.png](../_2024-02-07_104500.png)
 
 ---
 
