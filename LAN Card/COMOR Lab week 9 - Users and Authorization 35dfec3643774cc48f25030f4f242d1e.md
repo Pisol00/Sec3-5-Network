@@ -66,7 +66,7 @@ putter@anthority:~$ sudo useradd -m -G qassure qa02
 putter@anthority:~$ ls -ld /Executive /QC_Dept /QA_Dept
 ```
 
-![สกรีนช็อต 2024-02-07 105209.png](COMOR%20Lab%20week%209%20-%20Users%20and%20Authorization%2035dfec3643774cc48f25030f4f242d1e/_2024-02-07_105209.png)
+![สกรีนช็อต 2024-02-07 105209.png](./_2024-02-07_105209.png)
 
 ---
 
