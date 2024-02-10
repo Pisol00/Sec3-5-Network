@@ -102,7 +102,6 @@ ip route flush
 
 ## **References**
 
----
 
 [https://panupong-simto.medium.com/linux-routing-เรื่องที่ผมอยากเขียนมากที่สุด-d6c705407bc6](https://panupong-simto.medium.com/linux-routing-%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9C%E0%B8%A1%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%94-d6c705407bc6)
 
