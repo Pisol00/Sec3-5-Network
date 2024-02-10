@@ -17,6 +17,9 @@ sudo apt install dnsutils
 ```
 ifconfig
 ```
+IP ของเครื่องจะอยู่บริเวณอักษรสีเหลืองตามภาพด้านล่าง:
+![55](https://github.com/Pisol00/Sec3-5-Network/assets/109954048/74f811c4-daa5-4f0d-9507-0ce0347e443f)
+
 ### 3. Caching Nameserver
 แก้ไขไฟล์ /etc/bind/named.conf.options
 ```
@@ -25,10 +28,10 @@ sudo nano /etc/bind/named.conf.options
 โดยการแก้ไขที่อยู่ IP forwarders ให้เป็น IP ของเครื่อง Ubuntu
 ```
 forwarders {
-    192.168.10.2;
+    10.0.2.15;
 };
 ```
-> IP Address `192.168.10.2` เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
+> IP Address `10.0.2.15` เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
 ### 4. Primary Server
 แก้ไขไฟล์ /etc/bind/named.conf.local เพื่อเพิ่ม DNS zone ให้กับ BIND9
 ```
@@ -59,11 +62,11 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 
 @       IN      NS      ns.example.com.
-@       IN      A       192.168.10.2
+@       IN      A       10.0.2.15
 @       IN      AAAA    ::1
-ns      IN      A       192.168.10.2
+ns      IN      A       10.0.2.15
 ```
-> IP Address `192.168.10.2` เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
+> IP Address `10.0.2.15` เป็นของเครื่องคอมพิวเตอร์ตัวอย่าง
 ### 6. Reverse Zone File
 เพิ่ม Reverse Zone File เพื่ออนุญาตให้ DNS แก้ไขที่อยู่เป็นชื่อ
 ```
@@ -71,12 +74,12 @@ sudo nano /etc/bind/named.conf.local
 ```
 และทำการแก้ไข Zone File:
 ```
-zone "10.168.192.in-addr.arpa" {
+zone "2.0.10.in-addr.arpa" {
     type master;
     file "/etc/bind/db.192";
 };
 ```
-> `10.168.192` เป็น IP Address 3 octets แรกของเครื่องคอมพิวเตอร์ตัวอย่าง
+> `2.0.10` เป็น IP Address 3 octets แรกของเครื่องคอมพิวเตอร์ตัวอย่าง
 #### สร้างไฟล์ db.192
 โดยการ copy ไฟล์ของ db.127 เป็นไฟล์ชื่อ db.192
 ```
@@ -85,7 +88,7 @@ sudo cp /etc/bind/db.127 /etc/bind/db.192
 ทำการแก้ไขไฟล์ db.192:
 ```
 ;
-; BIND reverse data file for local 192.168.1.XXX net
+; BIND reverse data file for local 10.0.2.XXX net
 ;
 $TTL    604800
 @       IN      SOA     ns.example.com. root.example.com. (
@@ -96,10 +99,10 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 @       IN      NS      ns.
-2      IN      PTR     ns.example.com.
+15      IN      PTR     ns.example.com.
 
 ```
-> เลข `2` เป็น octets สุดท้ายของ IP Address
+> เลข `15` เป็น octets สุดท้ายของ IP Address
 
 ### 7. แก้ไข resolv.conf
 ```
@@ -107,7 +110,7 @@ sudo nano /etc/resolv.conf
 ```
 เพิ่ม Nameserver Addresses ไปยัง network clients:
 ```
-nameserver 192.168.10.2
+nameserver 10.0.2.15
 search example.com
 ```
 ### 8. Restart the DNS server
