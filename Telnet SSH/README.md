@@ -179,7 +179,7 @@ output:
 
  ##  REFERENCE 🍀
 
-https://medium.com/@6006021611071/telnet-ssh-f0a0464062ac
-https://www.youtube.com/watch?v=Wfzzh_dHRSE
-https://www.poeclub.org/rpi-home-server-14-1/
+https://medium.com/@6006021611071/telnet-ssh-f0a0464062ac .
+https://www.youtube.com/watch?v=Wfzzh_dHRSE .
+https://www.poeclub.org/rpi-home-server-14-1/ .
 https://www.youtube.com/@borntodev
