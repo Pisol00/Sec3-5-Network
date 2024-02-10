@@ -122,3 +122,7 @@ sudo systemctl restart bind9.service
 ```
 ping example.com
 ```
+
+
+#### อ้างอิง
+https://ubuntu.com/server/docs/service-domain-name-service-dns
