@@ -49,9 +49,9 @@ sudo apt-get install net-tools
 
 ***ตัวอย่างการใช้งาน***
 
-![Untitled](Routing%20ce4700b496ca44779132f8ca6c07cc98/Untitled.png)
+![IMG](img1.png)
 
-![Untitled](Routing%20ce4700b496ca44779132f8ca6c07cc98/Untitled%201.png)
+![IMG](img2.png)
 
 ## **Commands สำหรับการตั้งค่า Route**
 
