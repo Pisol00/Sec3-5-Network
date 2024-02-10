@@ -124,5 +124,5 @@ ping example.com
 ```
 
 
-#### อ้างอิง
+#### Reference
 https://ubuntu.com/server/docs/service-domain-name-service-dns
