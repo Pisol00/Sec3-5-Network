@@ -47,7 +47,7 @@ User@ubuntu:~$ ifconfig -a
 
 *OUTPUT*
 
-![*[ภาพที่ 1] การแสดงผลคำสั่ง ifconfig -a*](../asset/ifconfig.png)
+![*[ภาพที่ 1] การแสดงผลคำสั่ง ifconfig -a*](../assets/ifconfig.png)
 
 *[ภาพที่ 1] การแสดงผลคำสั่ง ifconfig -a*
 
@@ -59,7 +59,7 @@ User@ubuntu:~$ sudo ifconfig enp0s3:0 192.168.1.120 netmask 255.255.255.128 broa
 
 *OUTPUT*
 
-![*[ภาพที่ 2] การแบ่ง sub-interfaces* ](../asset/subinterface.png)
+![*[ภาพที่ 2] การแบ่ง sub-interfaces* ](../assets/subinterface.png)
 
 *[ภาพที่ 2] การแบ่ง sub-interfaces* 
 
@@ -219,7 +219,7 @@ User@ubuntu:~$ ip -4 -c addr show
 
 *OUTPUT*
 
-![*[ภาพที่ 3] ใช้ -c กับ ip addr เพื่อโชว์สีในส่วนของ IP และ state*](../asset/-cshow.png)
+![*[ภาพที่ 3] ใช้ -c กับ ip addr เพื่อโชว์สีในส่วนของ IP และ state*](../assets/-cshow.png)
 
 *[ภาพที่ 3] ใช้ -c กับ ip addr เพื่อโชว์สีในส่วนของ IP และ state*
 
@@ -231,7 +231,7 @@ User@ubuntu:~$ sudo ip addr add 192.168.1.120/25 dev enp0s3
 
 *OUTPUT*
 
-![*[ภาพที่ 4] กำหนดค่า subnet ใหม่ใน network interface*](../asset/assignnewip.png)
+![*[ภาพที่ 4] กำหนดค่า subnet ใหม่ใน network interface*](../assets/assignnewip.png)
 
 *[ภาพที่ 4] กำหนดค่า subnet ใหม่ใน network interface*
 
@@ -274,7 +274,7 @@ $ nmcli [OPTIONS] OBJECT {COMMAND | help}
 User@ubuntu:~$ nmcli connection add type ethernet autoconnect no ifname enp0s3
 ```
 
-![*[ภาพที่ 5] กำหนดค่าใหม่ใน network interface*](../asset/nmcliex.png)
+![*[ภาพที่ 5] กำหนดค่าใหม่ใน network interface*](../assets/nmcliex.png)
 
 *[ภาพที่ 5] กำหนดค่าใหม่ใน network interface*
 
