@@ -106,7 +106,7 @@ $ ip [OPTIONS] OBJECT {COMMAND | help}
 # ip link set {interface-name} {up|down}
 ```
 
-1. กำหนดค่าและแก้ไขการส่ง static route และ default route
+5. กำหนดค่าและแก้ไขการส่ง static route และ default route
     - Add a new **static route**
     
     ```java
@@ -127,9 +127,9 @@ $ ip [OPTIONS] OBJECT {COMMAND | help}
     ip route del default
     ```
     
-2. ติดตั้ง tunnel ผ่าน IP
-3. แสดงรายการแคช ARP หรือ NDISC
-4. กำหนด, ลบ, ตั้งค่า IP Address, routes, subnet และข้อมูล IP อื่น ๆ ไปยัง IP interfaces
+6. ติดตั้ง tunnel ผ่าน IP
+7. แสดงรายการแคช ARP หรือ NDISC
+8. กำหนด, ลบ, ตั้งค่า IP Address, routes, subnet และข้อมูล IP อื่น ๆ ไปยัง IP interfaces
     - **กำหนดค่า IP address ให้กับ interface**
     
     ```java
@@ -148,7 +148,7 @@ $ ip [OPTIONS] OBJECT {COMMAND | help}
     # ip a del {ip_addr/mask} dev {interface-name}
     ```
     
-5. แสดงรายการที่อยู่ IP และข้อมูลคุณสมบัติ
+9. แสดงรายการที่อยู่ IP และข้อมูลคุณสมบัติ
 
 ```java
 # ip add show
@@ -160,8 +160,8 @@ $ ip [OPTIONS] OBJECT {COMMAND | help}
 $ sudo ip -br -c addr show
 ```
 
-1. เก็บข้อมูลที่อยู่ IP เป็นหมวดหมู่
-2. แสดงวัตถุเพื่อนบ้าน กล่าวคือ แคช ARP, ทำให้แคช ARP เป็นโมฆะ, เพิ่มรายการเข้าแคช ARP และอื่น ๆ
+10. เก็บข้อมูลที่อยู่ IP เป็นหมวดหมู่
+11. แสดงวัตถุเพื่อนบ้าน กล่าวคือ แคช ARP, ทำให้แคช ARP เป็นโมฆะ, เพิ่มรายการเข้าแคช ARP และอื่น ๆ
     - **Display neighbour/arp cache**
     
     ```java
@@ -186,14 +186,14 @@ $ sudo ip -br -c addr show
     # ip -s -s n f {IPAddress}
     ```
     
-3. ตั้งค่าหรือลบรายการส่งเส้นทาง
-4. หา route address (เช่น 8.8.8.8)
+12. ตั้งค่าหรือลบรายการส่งเส้นทาง
+13. หา route address (เช่น 8.8.8.8)
 
 ```java
 $ ip route list
 ```
 
-1. กำหนดความยาวของคิวการส่ง
+14. กำหนดความยาวของคิวการส่ง
     
     ```java
     # ip link set txqueuelen {NUMBER} dev {DEVICE}
