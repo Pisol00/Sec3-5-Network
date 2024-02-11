@@ -111,7 +111,7 @@ $ sudo apt-get install network-manager // for debian
 # yum install NetworkManager // for Fedora
 ```
 
-1. **Service Execution** : ที่สำคัญเราต้องแน่ใจว่าบริการนั้นเปิดใช้งานอยู่ ดังนั้นเราอาจตรวจสอบด้วย `systemctl status`
+2. **Service Execution** : ที่สำคัญเราต้องแน่ใจว่าบริการนั้นเปิดใช้งานอยู่ ดังนั้นเราอาจตรวจสอบด้วย `systemctl status`
 
 ```java
 $ systemctl status NetworkManager
@@ -128,7 +128,7 @@ $ systemctl status NetworkManager
 # systemctl enable NetworkManager
 ```
 
-1. **Configuration Files :** ไฟล์การกำหนดค่าของ Network Manager อยู่ใน `/etc/NetworkManager` นอกจากนี้ การตั้งค่าการเชื่อมต่อจะถูกจัดเก็บไว้ในโฟลเดอร์ย่อยการเชื่อมต่อระบบ โดยส่วนใหญ่ เราจะใช้คำสั่ง `nmcli` เพื่อกำหนดค่าอุปกรณ์เครือข่ายของเรา เนื่องจากจะเก็บการเปลี่ยนแปลงในไฟล์การกำหนดค่าไว้ เราจึงไม่จำเป็นต้องแก้ไขด้วยตนเอง
+3. **Configuration Files :** ไฟล์การกำหนดค่าของ Network Manager อยู่ใน `/etc/NetworkManager` นอกจากนี้ การตั้งค่าการเชื่อมต่อจะถูกจัดเก็บไว้ในโฟลเดอร์ย่อยการเชื่อมต่อระบบ โดยส่วนใหญ่ เราจะใช้คำสั่ง `nmcli` เพื่อกำหนดค่าอุปกรณ์เครือข่ายของเรา เนื่องจากจะเก็บการเปลี่ยนแปลงในไฟล์การกำหนดค่าไว้ เราจึงไม่จำเป็นต้องแก้ไขด้วยตนเอง
 
 **เครื่องมือที่สำคัญเพิ่มเติม**
 
