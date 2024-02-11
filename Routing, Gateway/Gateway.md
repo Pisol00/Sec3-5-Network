@@ -29,7 +29,7 @@ ip r | grep default
 
 ***ตัวอย่าง***
 
-![Untitled](Gateway%20054a4ae378a846ab8fe63d1165c73e19/Untitled.png)
+![gate1](gate1.png)
 
 แต่เราสามารถเข้าไปตั้ง Gateway ให้ interface เองได้โดยใช้คำสั่ง
 
@@ -40,9 +40,9 @@ sudo netplan apply
 
 ***ตัวอย่าง***
 
-![Untitled](Gateway%20054a4ae378a846ab8fe63d1165c73e19/Untitled%201.png)
+![gate2](gate2.png)
 
-![Untitled](Gateway%20054a4ae378a846ab8fe63d1165c73e19/Untitled%202.png)
+![gate3](gate3.png)
 
 //กรณียังไม่ได้ติดตั้ง netplan ต้องติดตั้งก่อน
 
@@ -52,7 +52,7 @@ sudo apt-get install net-tools
 
 ***ตัวอย่างการใช้คำสั่งอีกครั้ง***
 
-![Untitled](Gateway%20054a4ae378a846ab8fe63d1165c73e19/Untitled%203.png)
+![gate4](gate4.png)
 
 ### Commands ดูตาราง Route,Gateway
 
@@ -61,7 +61,7 @@ route -n
 netstat -r -n
 ```
 
-![Untitled](Gateway%20054a4ae378a846ab8fe63d1165c73e19/Untitled%204.png)
+![gate5](gate5.png)
 
 ## **Commands สำหรับการตั้งค่า Gateway**
 
