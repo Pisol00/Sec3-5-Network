@@ -253,18 +253,18 @@ $ nmcli [OPTIONS] OBJECT {COMMAND | help}
 
 | Command | Description |
 | --- | --- |
-| nmcli general { status | hostname | permissions | logging } [ARGUMENTS...] | ใช้คำสั่งนี้เพื่อแสดงสถานะ NetworkManager และการอนุญาต |
-| nmcli networking { on | off | connectivity } [ARGUMENTS...] | สอบถามสถานะเครือข่าย NetworkManager เปิดใช้งานและปิดใช้งานเครือข่าย |
-| nmcli connection { show | up | down | modify | add | edit | clone | delete | monitor | reload | load | import | export } [ARGUMENTS...] | สามารถใช้การเชื่อมต่อเพิ่มเติมเพื่อให้สามารถสลับระหว่างเครือข่ายและการกำหนดค่าต่างๆ ได้อย่างรวดเร็ว |
+| nmcli general { status, hostname, permissions, logging } [ARGUMENTS...] | ใช้คำสั่งนี้เพื่อแสดงสถานะ NetworkManager และการอนุญาต |
+| nmcli networking { on, off, connectivity } [ARGUMENTS...] | สอบถามสถานะเครือข่าย NetworkManager เปิดใช้งานและปิดใช้งานเครือข่าย |
+| nmcli connection { show, up, down, modify, add, edit, clone, delete, monitor, reload, load, import, export } [ARGUMENTS...] | สามารถใช้การเชื่อมต่อเพิ่มเติมเพื่อให้สามารถสลับระหว่างเครือข่ายและการกำหนดค่าต่างๆ ได้อย่างรวดเร็ว |
 | nmcli connection show | แสดงรายการการเชื่อมต่อเครือข่ายทั้งหมดที่มีอยู่ในระบบของคุณ โดยให้รายละเอียดต่างๆ เช่น ชื่อการเชื่อมต่อ UUID อุปกรณ์ ประเภท และสถานะ |
 | nmcli connection add type <connection_type> ifname <interface_name> con-name <connection_name> | เพิ่มการเชื่อมต่ออีเทอร์เน็ตใหม่  |
 | nmcli connection modify <connection_name> <setting_name> <setting_value> | ปรับการตั้งค่าการเชื่อมต่อ |
-| nmcli device { status | show | set | connect | reapply | modify | disconnect | delete | monitor | wifi | lldp } [ARGUMENTS...] | แสดงและจัดการอินเทอร์เฟซเครือข่าย |
+| nmcli device { status, show, set, connect, reapply, modify, disconnect, delete, monitor, wifi, lldp } [ARGUMENTS...] | แสดงและจัดการอินเทอร์เฟซเครือข่าย |
 | nmcli dev status | แสดงสถานะปัจจุบันของอุปกรณ์เครือข่ายทั้งหมดบนระบบของคุณ |
 | nmcli device show <device_name> | แสดงรายละเอียดอุปกรณ์ตาม interface ที่ระบุ |
-| nmcli radio { all | wifi | wwan } [ARGUMENTS...] | แสดงสถานะสวิตช์วิทยุ หรือเปิดและปิดสวิตช์ |
+| nmcli radio { all, wifi, wwan } [ARGUMENTS...] | แสดงสถานะสวิตช์วิทยุ หรือเปิดและปิดสวิตช์ |
 | nmcli monitor | สังเกตกิจกรรม NetworkManager ติดตามการเปลี่ยนแปลงสถานะการเชื่อมต่อ อุปกรณ์ หรือโปรไฟล์การเชื่อมต่อ |
-| nmcli agent { secret | polkit | all } | รัน nmcli ในฐานะตัวแทนลับของ NetworkManager หรือตัวแทน polkit |
+| nmcli agent { secret, polkit, all } | รัน nmcli ในฐานะตัวแทนลับของ NetworkManager หรือตัวแทน polkit |
 
 ### ตัวอย่างการใช้คำสั่ง
 
