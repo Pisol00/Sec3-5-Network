@@ -10,8 +10,8 @@ List of Linux Components for Students Assignment - (Chapter: Network, Sec: 3)
 | STUDENT ID|Name|Subcomponents|Picture|
 |-----------|----|-------------|------|
 |65070127 |นางสาวปณาลี จุกสีดา     |Interface Devices (Intro Wireless, Aircard Adapter)|<img alt="65070127" src="/members-and-teacher/65070127.jpg" width="200">|
-|65070147 |นายพรเสก ชื่นมี         |Telnet SSH|
-|65070157 |นางสาวพิราภรณ์ ประเสิริฐ  |Routing, Gateway|<img alt="65070157" src="/members-and-teacher/65070157.JPG" width="200">|
+|65070147 |นายพรเสก ชื่นมี         |Telnet SSH|<img alt="65070147" src="/members-and-teacher/65070147.png" width="200">|
+|65070157 |นางสาวพิราภรณ์ ประเสิริฐ  |Routing, Gateway|<img alt="65070157" src="/members-and-teacher/65070157.jpg" width="200">|
 |65070158 |นายพิศลย์ อุตตาลกาญจนา |IP Setup|<img alt="65070158" src="/members-and-teacher/65070158.jpg" width="200">|
 |65070165 |นายภควัฒณ์ พันธุ์ภักดีวงษ์ |Interface Devices (Configuration Wireless, LAN CARD)|
 |65070168 |นางสาวภัณฑิรา ปิ่นกิ่งทอง  |DNS|
