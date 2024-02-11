@@ -89,3 +89,5 @@ sudo ip route add default via 192.168.10.1 dev enp0s8
 [https://www.howtouselinux.com/post/linux-command-get-network-gateway](https://www.howtouselinux.com/post/linux-command-get-network-gateway)
 
 [https://www.howtogeek.com/799588/how-to-set-the-default-gateway-in-linux/#configuring-the-default-gateway](https://www.howtogeek.com/799588/how-to-set-the-default-gateway-in-linux/#configuring-the-default-gateway)
+
+https://chat.openai.com
