@@ -81,16 +81,16 @@ $ ip [OPTIONS] OBJECT {COMMAND | help}
 
 | Object | Description |
 | --- | --- |
-| ip link | l | แสดงและแก้ไข network interface IPv6 |
-| ip address | addr | แสดงและแก้ไข IP Address ในอินเตอร์เฟซ |
-| ip addrlabel | addrl | การกำหนดค่าป้ายกำกับสำหรับการเลือกที่อยู่ของโปรโตคอล |
-| ip neighbour | n | แสดงและจัดการวัตถุข้างเคียง (ตาราง ARP) |
-| ip route | r | แสดงและแก้ไขตารางเส้นทาง (routing table) |
-| ip rule | ru  | กฎเกณฑ์ในฐานข้อมูลเกี่ยวกับนโยบายการกำหนดเส้นทาง |
-| ip maddress | maddr | Multicast address |
-| ip mroute | mr | Multicast routing cache entry |
-| ip tunnel | t | แสดงและแก้ไข Tunnel ที่ผ่านบน IP |
-| ip xfrm | x | Framework ของ IPsec protocol |
+| ip link, l | แสดงและแก้ไข network interface IPv6 |
+| ip address, addr | แสดงและแก้ไข IP Address ในอินเตอร์เฟซ |
+| ip addrlabel, addrl | การกำหนดค่าป้ายกำกับสำหรับการเลือกที่อยู่ของโปรโตคอล |
+| ip neighbour, n | แสดงและจัดการวัตถุข้างเคียง (ตาราง ARP) |
+| ip route, r | แสดงและแก้ไขตารางเส้นทาง (routing table) |
+| ip rule, ru  | กฎเกณฑ์ในฐานข้อมูลเกี่ยวกับนโยบายการกำหนดเส้นทาง |
+| ip maddress, maddr | Multicast address |
+| ip mroute, mr | Multicast routing cache entry |
+| ip tunnel, t | แสดงและแก้ไข Tunnel ที่ผ่านบน IP |
+| ip xfrm, x | Framework ของ IPsec protocol |
 
 > ในคำสั่งต่างๆสามารถพิมพ์รูปแบบย่อได้ เช่น ip address → ip a / ip addr เป็นต้น
 > 
@@ -154,14 +154,14 @@ $ ip [OPTIONS] OBJECT {COMMAND | help}
 # ip add show
 ```
 
-1. จัดการและแสดงสถานะของเครือข่ายทั้งหมด
+10. จัดการและแสดงสถานะของเครือข่ายทั้งหมด
 
 ```java
 $ sudo ip -br -c addr show
 ```
 
-10. เก็บข้อมูลที่อยู่ IP เป็นหมวดหมู่
-11. แสดงวัตถุเพื่อนบ้าน กล่าวคือ แคช ARP, ทำให้แคช ARP เป็นโมฆะ, เพิ่มรายการเข้าแคช ARP และอื่น ๆ
+11. เก็บข้อมูลที่อยู่ IP เป็นหมวดหมู่
+12. แสดงวัตถุเพื่อนบ้าน กล่าวคือ แคช ARP, ทำให้แคช ARP เป็นโมฆะ, เพิ่มรายการเข้าแคช ARP และอื่น ๆ
     - **Display neighbour/arp cache**
     
     ```java
@@ -186,14 +186,14 @@ $ sudo ip -br -c addr show
     # ip -s -s n f {IPAddress}
     ```
     
-12. ตั้งค่าหรือลบรายการส่งเส้นทาง
-13. หา route address (เช่น 8.8.8.8)
+13. ตั้งค่าหรือลบรายการส่งเส้นทาง
+14. หา route address (เช่น 8.8.8.8)
 
 ```java
 $ ip route list
 ```
 
-14. กำหนดความยาวของคิวการส่ง
+15. กำหนดความยาวของคิวการส่ง
     
     ```java
     # ip link set txqueuelen {NUMBER} dev {DEVICE}
