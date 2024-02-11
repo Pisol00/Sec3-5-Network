@@ -80,6 +80,8 @@ sudo ip route add default via 192.168.10.1 dev enp0s8
 
 ## ความแตกต่างระหว่าง Route กับ Gateway
 
+ความแตกต่างระหว่าง Route กับ Gateway คือ Route เป็นการกำหนดเส้นทางการส่งข้อมูลภายในเครือข่าย ในขณะที่ Gateway เป็นจุดเชื่อมต่อระหว่างเครือข่ายภายในและภายนอกที่ใช้ในการส่งข้อมูลไปยังเครือข่ายภายนอกของระบบ
+
 ## **References (ﾐ╹ᴥ╹ﾐ)**
 
 [https://www.cyberciti.biz/faq/how-to-find-gateway-ip-address/](https://www.cyberciti.biz/faq/how-to-find-gateway-ip-address/)
