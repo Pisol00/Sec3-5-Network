@@ -142,3 +142,6 @@ NIC รับผิดชอบในการส่งและรับแพ�
 6. [ภาพที่ 2]. iHAVECPU. TP-Link AX3000 (ARCHER TX55E) WI-FI 6 Bluetooth 5.2 PCIE Adapter. [https://www.ihavecpu.com/detailproduct/9976/TP-LINK-AX3000-(ARCHER-TX55E)-WI-FI-6-BLUETOOTH-5.2-PCIE-ADAPTER?srsltid=AfmBOopH4t2LKtuuiLhQdTmL2owMlPvkC8R9t8GKU2wJJqMpRLJvt9RMMMg](https://www.ihavecpu.com/detailproduct/9976/TP-LINK-AX3000-(ARCHER-TX55E)-WI-FI-6-BLUETOOTH-5.2-PCIE-ADAPTER?srsltid=AfmBOopH4t2LKtuuiLhQdTmL2owMlPvkC8R9t8GKU2wJJqMpRLJvt9RMMMg)
 7. [ภาพที่ 3]. Irving. (2021). What Is a Network Interface Card - NIC Definition, Function & Types. [https://community.fs.com/article/nic-card-guide-for-beginners-functions-types-and-selection-tips.html](https://community.fs.com/article/nic-card-guide-for-beginners-functions-types-and-selection-tips.html)
 8. [ภาพที่ 4]. (2018). Syn1588_PCIe_NIC_-_Issue_Linux_kernel_4.14__and_NIC_not_visible.jpg [https://www.oreganosystems.at/about-us/news/syn1588r-pcie-nic-issue-linux-kernel-414-and-nic-not-visible](https://www.oreganosystems.at/about-us/news/syn1588r-pcie-nic-issue-linux-kernel-414-and-nic-not-visible)
+
+เขียนและเรียบเรียงเนื้อหาโดย นายภควัฒณ์ พันธ์ุภักดีวงษ์ 65070165
+
