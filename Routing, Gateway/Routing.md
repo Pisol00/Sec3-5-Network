@@ -61,8 +61,8 @@ sudo apt-get install net-tools
 ip route add <destination_network> via <gateway_address> dev <interface>
 ```
 
-- <destination_network> : ไอพีเส้นทางที่ต้องการจะเพิ่ม
-- <gateway_address> : ที่อยู่ IP Gateway ที่จะใช้เป็นจุดเชื่อมต่อไปยังปลายทาง
+- `<destination_network>` : ไอพีเส้นทางที่ต้องการจะเพิ่ม
+- `<gateway_address>` : ที่อยู่ IP Gateway ที่จะใช้เป็นจุดเชื่อมต่อไปยังปลายทาง
 
 ### DELETE :
 
@@ -82,8 +82,8 @@ ip route show
 ip route change <destination_network> via <gateway_address> dev <interface>
 ```
 
-- <destination_network> : ไอพีเส้นทางที่ต้องการจะเปลื่ยนเส้นทาง
-- <gateway_address> : ที่อยู่ IP Gateway ที่จะใช้เป็นจุดเชื่อมต่อไปยังปลายทาง
+- `<destination_network>` : ไอพีเส้นทางที่ต้องการจะเปลื่ยนเส้นทาง
+- `<gateway_address>` : ที่อยู่ IP Gateway ที่จะใช้เป็นจุดเชื่อมต่อไปยังปลายทาง
 
 ### REPLACE :
 
@@ -91,8 +91,8 @@ ip route change <destination_network> via <gateway_address> dev <interface>
 ip route replace <destination_network> via <gateway_address> dev <interface>
 ```
 
-- <destination_network> : ไอพีเส้นทางที่ต้องการจะเปลื่ยนแทน
-- <gateway_address> : ที่อยู่ IP Gateway ที่จะใช้เป็นจุดเชื่อมต่อไปยังปลายทาง
+- `<destination_network>` : ไอพีเส้นทางที่ต้องการจะเปลื่ยนแทน
+- `<gateway_address>` : ที่อยู่ IP Gateway ที่จะใช้เป็นจุดเชื่อมต่อไปยังปลายทาง
 
 ### FLUSH :
 
