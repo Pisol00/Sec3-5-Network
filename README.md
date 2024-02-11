@@ -15,7 +15,7 @@ List of Linux Components for Students Assignment - (Chapter: Network, Sec: 3)
 |65070158 |นายพิศลย์ อุตตาลกาญจนา |IP Setup|<img alt="65070158" src="/members-and-teacher/65070158.jpg" width="200">|
 |65070165 |นายภควัฒณ์ พันธุ์ภักดีวงษ์ |Interface Devices (Configuration Wireless, LAN CARD)|
 |65070168 |นางสาวภัณฑิรา ปิ่นกิ่งทอง  |DNS|
-|65070170 |นางสาวภัทรภร จิตต์ปราณี  |Intro network to linux|
+|65070170 |นางสาวภัทรภร จิตต์ปราณี  |Intro network to linux|<img alt="65070158" src="/members-and-teacher/65070170.jpg" width="200">|
 
 
 ## Present
