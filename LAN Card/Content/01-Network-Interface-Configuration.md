@@ -89,7 +89,7 @@ $ sudo apt install network-manager
 $ nmtui
 ```
 
-![*[ภาพที่ 1] ใช้คำสั่ง nmtui จะเข้าสู่หน้า TUI ในการตั้งค่า*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/nmtui.png)
+![*[ภาพที่ 1] ใช้คำสั่ง nmtui จะเข้าสู่หน้า TUI ในการตั้งค่า*](../assets/nmtui.png)
 
 *[ภาพที่ 1] ใช้คำสั่ง nmtui จะเข้าสู่หน้า TUI ในการตั้งค่า*
 
@@ -117,7 +117,7 @@ $ sudo apt-get install network-manager // for debian
 $ systemctl status NetworkManager
 ```
 
-![*[ภาพที่ 2] ตรวจสอบสถานะของ Network Manager*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/systemctlstatus.png)
+![*[ภาพที่ 2] ตรวจสอบสถานะของ Network Manager*](../assets/systemctlstatus.png)
 
 *[ภาพที่ 2] ตรวจสอบสถานะของ Network Manager*
 
@@ -159,7 +159,7 @@ $ systemctl status NetworkManager
 > lspci เป็นยูทิลิตี้สำหรับแสดงข้อมูลเกี่ยวกับบัส PCI ในระบบและอุปกรณ์ที่เชื่อมต่ออยู่
 > 
 
-![*[ภาพที่ 3] ใช้คำสั่ง lspci -vv | more แล้วค้นหา ethernet controller*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/Ehternet.png)
+![*[ภาพที่ 3] ใช้คำสั่ง lspci -vv | more แล้วค้นหา ethernet controller*](../assets/Ehternet.png)
 
 *[ภาพที่ 3] ใช้คำสั่ง lspci -vv | more แล้วค้นหา ethernet controller*
 
@@ -170,7 +170,7 @@ $ lspci -vv | grep Ethernet
 
 คำสั่ง `**lshw**` สามารถระบุอินเตอร์เฟสเครือข่ายทั้งหมดที่พร้อมใช้งานสำหรับระบบของคุณ โดยให้ข้อมูลโดยละเอียดเกี่ยวกับความสามารถด้านฮาร์ดแวร์ของอะแด็ปเตอร์เฉพาะ รวมถึงข้อมูลบัส รายละเอียดไดรเวอร์ และความสามารถที่สนับสนุนทั้งหมด
 
-![*[ภาพที่ 4] การแสดงผลจากคำสั่ง lshw -class network*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/class-network.png)
+![*[ภาพที่ 4] การแสดงผลจากคำสั่ง lshw -class network*](../assets/class-network.png)
 
 *[ภาพที่ 4] การแสดงผลจากคำสั่ง lshw -class network*
 
@@ -182,13 +182,13 @@ $ lspci -vv | grep Ethernet
 2. `**/etc/netplan**` : ในปัจจุบันมีเครื่องมือที่ชื่อว่า **“Netplan”** เป็นเครื่องมือกำหนดค่าเครือข่าย Ubuntu เวอร์ชันล่าสุดทั้งหมด Netplan ขึ้นอยู่กับระบบการกำหนดค่าที่ใช้ YAML ซึ่งทำให้กระบวนการกำหนดค่าง่ายขึ้น แทนที่ไฟล์การกำหนดค่า `/etc/network/interfaces` แบบเก่าใน Ubuntu
 3. **`/etc/udev/rules.d/70-snap.snapd.rules`**: ไฟล์นี้เก็บข้อมูลเกี่ยวกับการกำหนดชื่ออินเทอร์เฟซของ NIC แต่ละตัว โดยแต่ละ NIC จะมีหมายเลข MAC address และชื่ออินเทอร์เฟซที่ถูกกำหนดให้ ไฟล์นี้สร้างขึ้นโดยอัตโนมัติเมื่อระบบทำการสร้างรายการของ NIC
 
-![*[ภาพที่ 5] เข้าไปยัง /etc/udev/rules.d/70-snap.snapd.rules*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/70-snap.png)
+![*[ภาพที่ 5] เข้าไปยัง /etc/udev/rules.d/70-snap.snapd.rules*](../assets/70-snap.png)
 
 *[ภาพที่ 5] เข้าไปยัง /etc/udev/rules.d/70-snap.snapd.rules*
 
 1. **`/sys/class/net/`**: นี้เป็นไดเรกทอรีที่เก็บข้อมูลเกี่ยวกับอินเทอร์เฟซเครือข่ายทั้งหมดในระบบ เช่นชื่อของอินเทอร์เฟซ สถานะของอินเทอร์เฟซ เป็นต้น
 
-![*[ภาพที่ 6] เข้าดูข้อมูลของ network interface enp0s3*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/class_net.png)
+![*[ภาพที่ 6] เข้าดูข้อมูลของ network interface enp0s3*](../assets/class_net.png)
 
 *[ภาพที่ 6] เข้าดูข้อมูลของ network interface enp0s3*
 
@@ -208,7 +208,7 @@ enp0s3 lo
 
 หากต้องการดูรายละเอียดเพิ่มเติมเกี่ยวกับอินเทอร์เฟซเครือข่าย เราสามารถใช้คำสั่ง `**ip link**` หรือ `**ip addr**`:
 
-![*[ภาพที่ 7] การแสดงผลจากคำสั่งของ ip addr และ ip link*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/iplink.png)
+![*[ภาพที่ 7] การแสดงผลจากคำสั่งของ ip addr และ ip link*](../assets/iplink.png)
 
 *[ภาพที่ 7] การแสดงผลจากคำสั่งของ ip addr และ ip link*
 
@@ -233,7 +233,7 @@ enp0s3 lo
 $ cat /proc/net/dev
 ```
 
-![*[ภาพที่ 8] การแสดงผลจากการใช้คำสั่งตัวอย่างด้านบน*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/example.png)
+![*[ภาพที่ 8] การแสดงผลจากการใช้คำสั่งตัวอย่างด้านบน*](../assets/example.png)
 
 *[ภาพที่ 8] การแสดงผลจากการใช้คำสั่งตัวอย่างด้านบน*
 
@@ -244,7 +244,7 @@ $ cat /proc/net/dev
 1. ใช้คำสั่ง `ip link show dev [interface-name]`
 2. ใช้คำสั่ง `ip a sh dev [interface-name]`
 
-![*[ภาพที่ 9] การแสดงผลจากคำสั่งของ ip link show dev enp0s3*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/show_dev.png)
+![*[ภาพที่ 9] การแสดงผลจากคำสั่งของ ip link show dev enp0s3*](../assets/show_dev.png)
 
 *[ภาพที่ 9] การแสดงผลจากคำสั่งของ ip link show dev enp0s3*
 
@@ -258,7 +258,7 @@ $ cat /proc/net/dev
 3. ใช้คำสั่ง `ifconfig [interface-name] up/down`
 4. ใช้คำสั่ง `ifup [interface-name]` เพื่อเปิดและ `ifdown [interface-name]` เพื่อปิด
 
-![*[ภาพที่ 10] การแสดงผลของ interface ทั้งก่อนปิดและหลังปิด enp0s3* ](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/updown.png)
+![*[ภาพที่ 10] การแสดงผลของ interface ทั้งก่อนปิดและหลังปิด enp0s3* ](../assets/updown.png)
 
 *[ภาพที่ 10] การแสดงผลของ interface ทั้งก่อนปิดและหลังปิด enp0s3* 
 
@@ -269,7 +269,7 @@ $ cat /proc/net/dev
 
 `ethtool` เป็นโปรแกรมที่แสดงและเปลี่ยนการตั้งค่าการ์ด Ethernet เช่น การต่อรองอัตโนมัติ, ความเร็วพอร์ต, โหมดดูเพล็กซ์, และ Wake-on-LAN
 
-![*[ภาพที่ 11] การแสดงผลจากคำสั่งของ ethtool enp0s3*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/ethtool.png)
+![*[ภาพที่ 11] การแสดงผลจากคำสั่งของ ethtool enp0s3*](../assets/ethtool.png)
 
 *[ภาพที่ 11] การแสดงผลจากคำสั่งของ ethtool enp0s3*
 
@@ -287,7 +287,7 @@ $ ls /etc/netplan/
 $ sudo nano /etc/netplan/*.yaml
 ```
 
-![*[ภาพที่ 12] nano editor ที่ไฟล์ของ /etc/netplan/00-installer-config.yam1*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/installer-config.png)
+![*[ภาพที่ 12] nano editor ที่ไฟล์ของ /etc/netplan/00-installer-config.yam1*](../assets/installer-config.png)
 
 *[ภาพที่ 12] nano editor ที่ไฟล์ของ /etc/netplan/00-installer-config.yam1*
 
@@ -314,7 +314,7 @@ network:
 
 - ดูรายชื่ออุปกรณ์เครือข่ายทั้งหมดในเครื่อง Linux ของด้วย `nmcli device` และสามารถแสดงคุณสมบัติที่ละเอียดมากขึ้นได้ด้วย เช่น ที่อยู่ IP ของอุปกรณ์โดยใช้คำสั่ง `nmcli device show [interface-name]`
 
-![*[ภาพที่ 13] แสดงผลของคำสั่ง nmcli device และ nmcli device show enp0s3*](01-Network-Interface-Configuration%20949c8c5611894bf5a14b9cee7417126a/nmclidevice.png)
+![*[ภาพที่ 13] แสดงผลของคำสั่ง nmcli device และ nmcli device show enp0s3*](../assets/nmclidevice.png)
 
 *[ภาพที่ 13] แสดงผลของคำสั่ง nmcli device และ nmcli device show enp0s3*
 
